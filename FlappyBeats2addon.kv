@@ -1,0 +1,19 @@
+<FlappyBeatsGame>:
+    orientation: 'vertical'
+
+    Label:
+        text: 'Score: ' + str(root.score)
+        size_hint_y: None
+        height: '48dp'
+        font_size: '24sp'
+
+    Widget:
+        id: game_area
+
+    Label:
+        text: 'Game Over'
+        size_hint_y: None
+        height: '48dp'
+        font_size: '48sp'
+        color: 1, 0, 0, 1
+        opacity: 1 if root.game_over else 0
